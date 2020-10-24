@@ -1,4 +1,5 @@
 import pt from 'prop-types';
+import React from "react";
 
 export function Article(props) {
     return (
