@@ -6,17 +6,23 @@ import {
 
 import { FrontPage } from "./FrontPage/FrontPage";
 import {ArticleList} from "./Articles/ArticleList";
+import {FullArticle} from "./FullArticle/FullArticle";
 
 export class UserRouter extends React.Component {
     render() {
         return (
             <Router>
-                <Route path="/">
+                <Route exact path="/">
                     <FrontPage/>
                 </Route>
-                <Route path="/articles">
+                <Route exact path="/articles">
                     <ArticleList/>
                 </Route>
+                <Route
+                    exact
+                    path="/article/:article_id"
+                    component={ FullArticle }
+                />
             </Router>
         )
     }
