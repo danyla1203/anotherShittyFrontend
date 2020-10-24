@@ -12,11 +12,11 @@ export class ArticleList extends React.Component {
     }
 
     getRenderedArticles() {
-        console.log(this.props);
         return this.props.ArticleStore.articles.map((el) => {
             return (
                 <Article
                     key={el.article_id}
+                    article_id={el.article_id}
                     title={el.title}
                     text={el.text}
                 />
