@@ -2,12 +2,13 @@
   "name": "fuck-you-front",
   "version": "0.0.1",
   "dependencies": {
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "mobx": "^5.8.0",
-    "mobx-react": "^5.4.3"
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "latest",
