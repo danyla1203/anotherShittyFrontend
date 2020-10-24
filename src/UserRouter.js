@@ -13,27 +13,25 @@ import {Header} from "./Header/Header";
 export class UserRouter extends React.Component {
     render() {
         return (
-            <div>
+            <Router>
                 <Header />
-                <Router>
-                    <Route exact path="/">
-                        <FrontPage/>
-                    </Route>
-                    <Route exact path="/articles">
-                        <ArticleList/>
-                    </Route>
-                    <Route
-                        exact
-                        path="/article/:article_id"
-                        component={ FullArticle }
-                    />
-                    <Route
-                        exact
-                        path="/login"
-                        component={ LoginPage }
-                    />
-                </Router>
-            </div>
+                <Route exact path="/">
+                    <FrontPage/>
+                </Route>
+                <Route exact path="/articles">
+                    <ArticleList/>
+                </Route>
+                <Route
+                    exact
+                    path="/article/:article_id"
+                    component={ FullArticle }
+                />
+                <Route
+                    exact
+                    path="/login"
+                    component={ LoginPage }
+                />
+            </Router>
         )
     }
 }
