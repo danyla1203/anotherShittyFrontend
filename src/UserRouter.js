@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import { FrontPage } from "./FrontPage/FrontPage";
+import {ArticleList} from "./Articles/ArticleList";
 
 export class UserRouter extends React.Component {
     render() {
@@ -12,6 +13,9 @@ export class UserRouter extends React.Component {
             <Router>
                 <Route path="/">
                     <FrontPage/>
+                </Route>
+                <Route path="/articles">
+                    <ArticleList/>
                 </Route>
             </Router>
         )
