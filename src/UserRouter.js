@@ -7,6 +7,7 @@ import {
 import { FrontPage } from "./FrontPage/FrontPage";
 import {ArticleList} from "./Articles/ArticleList";
 import {FullArticle} from "./FullArticle/FullArticle";
+import {LoginPage} from "./LoginPage/LoginPage";
 
 export class UserRouter extends React.Component {
     render() {
@@ -22,6 +23,11 @@ export class UserRouter extends React.Component {
                     exact
                     path="/article/:article_id"
                     component={ FullArticle }
+                />
+                <Route
+                    exact
+                    path="/login"
+                    component={ LoginPage }
                 />
             </Router>
         )
