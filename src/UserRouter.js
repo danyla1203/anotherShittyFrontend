@@ -1,14 +1,12 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Link
 } from "react-router-dom";
 
-import FrontPage from "./FrontPage/FrontPage";
+import { FrontPage } from "./FrontPage/FrontPage";
 
-class UserRouter extends React.Component {
+export class UserRouter extends React.Component {
     render() {
         return (
             <Router>
@@ -19,5 +17,3 @@ class UserRouter extends React.Component {
         )
     }
 }
-
-export default UserRouter

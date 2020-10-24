@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import {Provider} from "mobx-react";
 
 import * as stores from "./stores/index";
-import UserRouter from "./UserRouter";
+import { UserRouter } from "./UserRouter";
 
 
 function App() {
