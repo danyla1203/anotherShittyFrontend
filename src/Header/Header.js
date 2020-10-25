@@ -1,12 +1,16 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
+
+import "./Header.css";
 
 export function Header() {
     return (
         <header>
-            <Link to="/">Home</Link>
-            <Link to="/articles">Articles</Link>
-            <Link to="/login">Login</Link>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/articles">Articles</Link></li>
+                <li><Link to="/login">Login</Link></li>
+            </ul>
         </header>
     )
 }
