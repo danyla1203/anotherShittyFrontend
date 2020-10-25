@@ -1,0 +1,36 @@
+header {
+    height: 60px;
+    border-bottom: 1px black solid;
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a {
+    color: black;
+    font-family: 'Roboto';
+    transition: 0.3s;
+}
+header ul li {
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+header ul li:hover {
+    background-color: black;
+    transition: 0.4s;
+
+}
+header ul li:hover a {
+    color: white;
+    transition: 0.4s;
+}
